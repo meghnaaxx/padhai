@@ -285,7 +285,32 @@
     <main style="text-align: center;" class="content">
         <h3>
             
+          <button onclick="downloadPDF()">Download PDF</button>
 
+          <script>
+          function downloadPDF() {
+            // Replace 'path/to/your/file.pdf' with the actual path to your PDF file
+            var pdfPath = "C:\Users\meghn\OneDrive\Desktop\padhaii\padhai\HGM Mandatory Public Disclosure .pdf";
+          
+            // Create an anchor element
+            var link = document.createElement('a');
+          
+            // Set the href attribute to the path of the PDF file
+            link.href = "C:\Users\meghn\OneDrive\Desktop\padhaii\padhai\HGM Mandatory Public Disclosure .pdf";
+          
+            // Set the download attribute with the desired filename for the user
+            link.download = 'downloaded_file.pdf';
+          
+            // Append the anchor element to the body
+            document.body.appendChild(link);
+          
+            // Trigger a click on the anchor element
+            link.click();
+          
+            // Remove the anchor element from the body
+            document.body.removeChild(link);
+          }
+          </script>
 <img src="home_automation.png"
         </h3>
     </main>
@@ -358,8 +383,6 @@
             <!-- <h3 class="f-title f_500 t_color f_size_18 mb_40 text-center">Pages</h3> -->
             <ul class="list-unstyled f_list text-center">
               <li><a href="index.html#expertsWillCallYouForm">Enroll Now</a></li>
-              <li><a href="termsAndConditions.html">Terms and Conditions</a></li>
-              <li><a href="refundPolicy.html">Refund Policy</a></li>
             </ul>
           </div>
         </div>
@@ -483,7 +506,7 @@ var swiper = new Swiper('.swiper-navication', {
     <script defer src="assets/customJs/otp.html"></script>
     <script defer src="assets/customJs/contact-otp.html"></script>
 
-    <script>
+    <>
         $(document).ready(function () {
             $(".progress").each(function () {
                 var $bar = $(this).find(".bar");
@@ -503,6 +526,9 @@ var swiper = new Swiper('.swiper-navication', {
                 });
             })
         });
+
+        <button onclick="downloadPDF()">Download PDF</button>
+
     </script>
 
 </body>
