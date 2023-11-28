@@ -2887,6 +2887,11 @@ Affordable Area Style
   color: #fff;
 }
 
+.single-affordable h5 > p{
+  color: white;
+  align-self: left;
+  display: flex;
+}
 .single-affordable.two i {
   background-color: #f4effa;
   color: #925eca;
