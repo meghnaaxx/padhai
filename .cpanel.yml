@@ -1,6 +1,0 @@
----
-deployment:
-  tasks:
-    - export DEPLOYPATH=/home/hgmgurukulam/public_html/
-    - /bin/cp * $DEPLOYPATH
-    - /bin/cp -R assets/* $DEPLOYPATH
